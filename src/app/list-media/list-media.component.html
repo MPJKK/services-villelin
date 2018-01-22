@@ -1,0 +1,11 @@
+<p>
+    {{ tervehdys }}
+</p>
+
+<ul>
+    <li *ngFor="let kuva of kaikkiMedia">
+        <img [src]="mediaUrl + kuva.filename.split('.')[0] + '-tn640.png'">
+        <h4>{{kuva.title}}</h4>
+        <p>Description: {{kuva.description}}</p>
+    </li>
+</ul>
