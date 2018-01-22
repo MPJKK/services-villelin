@@ -3,8 +3,8 @@
 </p>
 
 <ul>
-    <li *ngFor="let kuva of kaikkiMedia">
-        <img [src]="mediaUrl + kuva.filename.split('.')[0] + '-tn640.png'">
+    <li *ngFor="let kuva of kuvaLista">
+        <img src="{{kuva.thumb}}">
         <h4>{{kuva.title}}</h4>
         <p>Description: {{kuva.description}}</p>
     </li>
