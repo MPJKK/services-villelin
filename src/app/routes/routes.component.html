@@ -1,0 +1,10 @@
+<ul>
+    <li *ngFor="let pys of reitit">
+        {{ pys.name }}
+        <ul>
+            <li *ngFor="let reitti of pys.patterns">
+                {{ reitti.route.shortName }}: {{ reitti.route.longName }}
+            </li>
+        </ul>
+    </li>
+</ul>
